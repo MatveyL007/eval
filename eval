@@ -1,2 +1,40 @@
+import cv2
+import os 
+import glob
+
+path = "C:\Users\Матвей\OneDrive\Рабочий стол\traffic_light_images\training"
+
+color = ["red", "green", "yellow"]
+
+for clr in color:
+  path=os.path.join(path, clr) 
+   os.path.join(path,"*.jpg")
+  fileList = glob.glob(os.path.join(path,"*.jpg"))
+  for fileList in fileList
+      frame=cv2.imread(filename)
+
+b = [:, :, 0]
+g = [:, :, 1]
+r = [:, :, 2]
+
+cv2.imshow("b",b)
+cv2.imshow("g",g)
+cv2.imshow("r",r)
+
+hsv = cv2.cvtColor(rgb,cv2.COLOR_BGR2HSV)
+cv2.imshow("hsv",hsv)
+
+h = hsv_[:, :, 0]
+g = hsv_[:, :, 1]
+r = hsv_[:, :, 2]
+
+cv2.imshow("h",h)
+cv2.imshow("s",s)
+cv2.imshow("v",v)
+
+
+
+#cv2.imread(" .jpg")
+
 
 
